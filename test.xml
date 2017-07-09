@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note>
+    <customers>
+        <customer>
+            <cvr>234234234</cvr>
+            <data>
+                <name>Dennis</name>
+            </data>
+        </customer>
+        <customer>
+            <cvr>123123</cvr>
+            <data>
+                <name>Jakob</name>
+            </data>
+        </customer>
+    </customers>
+</note>

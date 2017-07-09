@@ -1,0 +1,25 @@
+{
+    "name": "diversen/simple-query-selector",
+    "description": "A very simple way to query simpleXML documents using CSS selectors",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "dom",
+        "jquery",
+        "css-selector"
+    ],
+    "authors": [
+        {
+            "name": "Dennis Iversen",
+            "email": "dennis.iversen@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "diversen\\": "/"
+        }
+    },
+    "require": {
+        "symfony/css-selector": "^3.3"
+    }
+}
