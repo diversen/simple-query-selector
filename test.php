@@ -3,7 +3,7 @@
 include_once "vendor/autoload.php";
 
 // You can ommit the next include is you are using default composer auto-loading
-include_once "simpleQuery.php";
+include_once "querySelector.php";
 
 use diversen\querySelector;
 

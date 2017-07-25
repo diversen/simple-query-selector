@@ -12,12 +12,23 @@ the `CssSelector`.
 
 ## Install
 
-    composer require diversen/simple-query-selector
+	composer require diversen/simple-query-selector
 
 ## Usage
 
 See [test.php](test.php) and [test.xml](test.xml)
 
-License
+## Notice
+
+CssSelector or XPath does not like case-diffrence in the XML it searches 
+through. You will need some kind of normalisation if your XML has different
+cases, e.g. a tag like `<CustomerTest></CustomerTest>` will most likely cause
+problems. Normalize your XML-string with a function like this: 
+
+	$xml = preg_replace_callback("/(<\/?[^!][^>]+)/", function ($matches) {
+		return strtolower($matches[1]);
+	}, $xml);
+
+## License
 
 MIT © Dennis Iversen
